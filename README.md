@@ -29,9 +29,7 @@ Special attention was given to **class imbalance**, which was handled using **RO
 5. Analyze variable importance (Random Forest).  
 6. Visualize results.
 
-![Workflow Diagram](outputs/C:/Users/Afsana/OneDrive/Documents/Project/Corporate_Financial_Risk_Model/Outputs/feature_importance_rf.png.png) 
-
----
+![Workflow Diagram](feature_importance_rf.png) 
 
 #HOW TO RUN
 
@@ -69,6 +67,8 @@ auc(roc_obj)
 | ------------------- | ------ | -------- | ----------- | ----------- | ----------------- |
 | Logistic Regression | 0.9051 | 0.8533   | 0.8636      | 0.8529      | 0.8583            |
 | Random Forest       | 0.8504 | 0.8321   | 0.82        | 0.85        | 0.835             |
+
+
 importance_rf <- importance(rf_model)
 varImpPlot(rf_model)
 
@@ -93,4 +93,5 @@ Future work: try SMOTE, XGBoost, or tuning thresholds for improved prediction of
 
 # Author
 Afsana Reza
+
 BBA in Business Analytics, United International University
