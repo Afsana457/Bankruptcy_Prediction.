@@ -1,10 +1,21 @@
-# Bankruptcy Prediction Project
+# Corporate Financial Risk Prediction
 
 # Project Overview
 This project predicts company bankruptcy using financial ratios and other company-level features.  
 We implemented **Logistic Regression** and **Random Forest** models to classify companies as bankrupt or non-bankrupt.  
 Special attention was given to **class imbalance**, which was handled using **ROSE (Random Over-Sampling Examples)**.
 
+# Key Features
+
+Data Preprocessing: Cleaning, handling missing values, and converting categorical variables as required.
+
+Handling Imbalanced Data: Techniques like ROSE (Random Over-Sampling Examples) were used to balance the dataset.
+
+Modeling: Logistic Regression and Random Forest classifiers are used to predict corporate bankruptcy.
+
+Evaluation: Confusion matrix, ROC curve, AUC, and feature importance analysis to evaluate model performance.
+
+Visualization: ROC curves and variable importance plots to interpret model results.
 ---
 
 ##  Dataset
@@ -83,6 +94,14 @@ ROC Curve saved as outputs/roc_curve.png
 
 Variable Importance Plot saved as outputs/var_importance.png
 
+# Insights
+
+Random Forest achieved an AUC of 0.85 on the test data, indicating strong predictive power.
+
+Feature importance analysis highlights the most critical financial ratios influencing bankruptcy predictions.
+
+Balancing the dataset is crucial for improving model sensitivity towards minority class (bankrupt companies).
+
 # Notes & Recommendations
 
 The dataset is highly imbalanced; ROSE sampling improves minority class detection.
@@ -95,3 +114,4 @@ Future work: try SMOTE, XGBoost, or tuning thresholds for improved prediction of
 Afsana Reza
 
 BBA in Business Analytics, United International University
+
